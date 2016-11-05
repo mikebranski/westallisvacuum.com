@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;}
+
+body {
+	line-height: 1.2;
+	font-size: 62.5%; /* Sets base font-size to 10px based on browser default of 16px */}
+
+ol, ul {
+	list-style: none;}
+
+blockquote, q {
+	quotes: none;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;}
+
+del {
+	text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+
+
+
+body {
+	background: transparent url(../img/body-bg.png) repeat-x 0 0;
+	border-top: 3px solid #246a33;
+	font-family: Arial, Helvetica, sans-serif;}
+
+h2, h3 {
+	font-size: 100%;
+	color: #246a33;}
+
+p {
+	margin: 0 0 1.25em;}
+
+a {
+	color: #20622e;
+	text-decoration: underline;}
+
+	a:hover {
+		color: #ddd7b8;
+		text-decoration: none;}
+
+#container {
+	position: relative;
+	margin: 42px auto 0;
+	padding-bottom: 35px;
+	width: 828px;
+	/*font-size: 80%;*/}
+
+#logo {
+	display: block;
+	background: transparent url(../img/logo-alt.png) no-repeat 0 0;
+	width: 203px;
+	height: 115px;
+	position: relative;
+	text-indent: -1000em;
+	z-index: 1;}
+
+#facebook {
+	position: absolute;
+	right: 150px;
+	top: 14px;}
+
+#callUsToday {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent url(../img/call-us-today.png) no-repeat 0 0;
+	width: 135px;
+	height: 32px;
+	text-indent: -1000em;}
+
+#mainNavigation2 {
+	position: absolute;
+	top: 59px;
+	right: 0;
+	border-bottom: 1px solid #eaeaea;
+	padding: 0 0 5px 160px;}
+
+	#mainNavigation2 li {
+		float: left;
+		margin-left: 16px;}
+
+	#mainNavigation2 a {
+		color: #888;
+		display: block;
+		font-family: Arial, Verdana, sans-serif;
+		font-size: 13px;
+		line-height: 1em;
+		padding: 7px 8px 8px;
+		/*background-image: url(../img/main-navigation.png);
+		background-repeat: no-repeat;
+		height: 25px;
+		text-indent: -1000em;*/
+		text-decoration: none;}
+
+		#mainNavigation2 a.active {
+			background-color: #faf7ea;
+			border-radius: 5px;
+			color: #246a33;
+		}
+
+#mainNavigation {
+	position: absolute;
+	top: 59px;
+	right: 0;
+	border-bottom: 1px solid #eaeaea;
+	padding: 0 0 5px 160px;}
+
+	#mainNavigation li {
+		float: left;
+		margin-left: 24px;}
+
+	#mainNavigation a {
+		display: block;
+		background-image: url(../img/main-navigation.png);
+		background-repeat: no-repeat;
+		height: 25px;
+		text-indent: -1000em;}
+
+	#mnHome a {
+		width: 52px;}
+
+		#mnHome a:hover {
+			background-position: 0 -25px;}
+
+		#mnHome a.active {
+			background-position: 0 -50px;}
+
+	#mnProducts a {
+		background-position: -52px 0;
+		width: 70px;}
+
+		#mnProducts a:hover {
+			background-position: -52px -25px;}
+
+		#mnProducts a.active {
+			background-position: -52px -50px;}
+
+	#mnServices a {
+		background-position: -122px 0;
+		width: 68px;}
+
+		#mnServices a:hover {
+			background-position: -122px -25px;}
+
+		#mnServices a.active {
+			background-position: -122px -50px;}
+
+	#mnAbout a {
+		background-position: -190px 0;
+		width: 72px;}
+
+		#mnAbout a:hover {
+			background-position: -190px -25px;}
+
+		#mnAbout a.active {
+			background-position: -190px -50px;}
+
+	#mnContact a {
+		background-position: -262px 0;
+		width: 83px;}
+
+		#mnContact a:hover {
+			background-position: -262px -25px;}
+
+		#mnContact a.active {
+			background-position: -262px -50px;}
+
+/* Intro on homepage */
+#intro {
+	color: #444;
+	font-size: 13px;
+	margin: 0 300px 30px 15px;
+}
+
+/* Callouts on homepage */
+.callout-header {
+	background: transparent url(../img/callout-header-bg.jpg) no-repeat 50% 0;
+	border-bottom: 1px solid #eaeaea;
+	margin: 0 0 20px;
+	width: 827px;
+	padding: 40px 0 30px;}
+
+.callouts {
+	overflow: hidden;}
+
+	.callout {
+		border-left: 1px solid #e5e5e5;
+		float: left;
+		margin-left: 15px;
+		padding: 0 10px 0 20px;
+		/*padding: 0 20px;*/
+		/*padding-left: 20px;*/
+		width: 245px;}
+
+	.callout:first-child {
+		border-left: none;
+		padding: 0;
+		width: 230px;}
+
+		.callout p {
+			font-size: 1.3em;
+			color: #6b756d;}
+
+		.callout ul {
+			font-size: 1.2em;}
+
+			.callout li {}
+
+#callout-services {
+	position: relative;}
+
+	#callout-services .text {
+		background: transparent url(../img/callout-services-text.png) no-repeat 0 0;
+		margin: 0 0 15px 65px;
+		width: 453px;
+		height: 90px;
+		text-indent: -1000em;}
+
+/* Free Estimates Badge */
+#free-estimates {
+	float: right;
+	background-image: url(../img/free-estimates.jpg);
+	background-repeat: no-repeat;
+	margin-top: -50px;
+	width: 268px;
+	height: 359px;
+	text-indent: -1000em;}
+
+#index #free-estimates {
+	position: absolute;
+	top: 38px;
+	right: 0;
+	background-image: url(../img/free-estimates-homepage.png);}
+
+/* Bulleted lists */
+.bulleted li {
+	background: transparent url(../img/grey-triangle.gif) no-repeat 0 .1em;
+	margin: 0 0 1em;
+	padding: 0 0 0 1em;}
+
+/* Headers - Level One */
+h1 {
+	/*background-image: url(../img/headers-level-one.png);
+	background-repeat: no-repeat;*/
+	color: #4C534E;
+	font-family: Lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 35.5px;
+	font-weight: 300;
+	/*margin-left: 257px;*/
+	margin-left: 30px;
+	/*height: 27px;
+	text-indent: -1000em;*/}
+
+/*#index h1 {display:none;}
+#products h1 {background-position: 0 -27px;}
+#services h1 {background-position: 0 -54px;}
+#about h1 {background-position: 0 -81px;}
+#contact h1 {background-position: 0 -108px;}*/
+
+/* Headers - Level Two */
+h2 {
+	/*background-image: url(../img/headers-level-two.png);
+	background-repeat: no-repeat;*/
+	font-family: 'Rokkitt', serif;
+	font-size: 22px;
+	/*height: 20px;*/
+	margin: 0 0 10px;
+	/*text-indent: -1000em;*/}
+
+	h2 a {
+		text-decoration: none;}
+
+		h2 a:hover {
+			color: inherit;}
+
+/*#repairs-service {background-position: 0 0;}
+#parts-filters-fluids {background-position: 0 -20px;}
+#certified-parts-dealer {background-position: 0 -40px;}*/
+
+/* Headers - Level Three */
+h3 {
+	background-image: url(../img/headers-level-three.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	margin: 0 0 1em;
+	font-size: 1.7em;
+	text-indent: -1000em;}
+
+#refurbished-vacuums {background-position: 0 0;}
+#vacuum-bags {background-position: 0 -16px;}
+#dust-bags {background-position: 0 -32px;}
+
+/* Sidebar */
+#sidebar {
+	display: none;
+	font-size: 1.3em;
+	float: left;
+	width: 230px;}
+
+	#sidebar h2 {
+		color: #4c534e;}
+
+/* Sub Navigation */
+#subNavigation {
+	margin-bottom: 2.5em;
+	/*position: absolute;
+	top: 0;*/
+	width: 230px;}
+
+	#subNavigation ul {
+		border-top: 1px solid #cedcd1;}
+
+		#subNavigation > ul > li {
+			border-bottom: 1px solid #cedcd1;}
+
+			#subNavigation > ul > li > a {
+				display: block;
+				padding: 5px 0 5px 30px;
+				font-size: 1.4em;
+				text-decoration: none;}
+
+			#subNavigation a:hover {
+				color: #605933;}
+
+		/* Sub Sub Navigation */
+		#subNavigation ul ul {
+			display: none;
+			padding: 3px 0 12px 65px;}
+
+			#subNavigation ul ul a {
+				display: block;
+				padding: 7px 0 0;
+				font-size: 1.2em;
+				text-decoration: none;
+				color: #6b756d;}
+
+		/* Active Item */
+		#subNavigation .active > a {
+			color: #605933;}
+
+		#subNavigation .active ul {
+			display: block;}
+
+/* Content */
+#contentContainer {
+	overflow: hidden;
+	position: relative;}
+
+#content {
+	color: #6b756d;
+	/*float: right;*/
+	font-size: 1.3em;
+	line-height: 1.6em;
+	/*margin-left: 30px;*/
+	margin-left: 60px;
+	margin-right: 160px;
+	min-height: 120px;
+	overflow: hidden;
+	position: relative;
+	/*width: 568px;*/}
+
+	#content ul {
+		list-style-position: outside;
+		list-style-type: disc;
+		margin: 0 0 1.25em 1em;}
+
+		#content ul li {
+			margin-left: 2em;}
+
+	#content ul.two-column {
+		-webkit-column-count: 2;
+		   -moz-column-count: 2;
+		        column-count: 2;
+		-webkit-column-gap: 20px;
+		   -moz-column-gap: 20px;
+		        column-gap: 20px;
+	}
+
+
+/* Blocks */
+.blockExt {
+	position: relative;
+	min-height: 132px;
+	padding-left: 177px;}
+
+	.blockExt img {
+		position: absolute;
+		top: 0;
+		left: 30px;
+		border: 11px solid #e2dbb7;
+		width: 110px;
+		height: 110px;}
+
+/* Buttons */
+#see-all-services-btn {
+	display: block;
+	background: transparent url(../img/see-all-services-btn.png) no-repeat 0 0;
+	margin: 0 0 0 115px;
+	width: 117px;
+	height: 28px;
+	text-indent: -1000em;}
+
+	#see-all-services-btn:hover {
+		background-position: 0 -28px;}
+
+#brandLogos {
+	background: transparent url(../img/brand-logos.png) no-repeat 0 0;
+	margin: 35px auto;
+	width: 736px;
+	height: 77px;}
+
+	#brandLogos ul {
+		display: none;}
+
+/* Hours */
+.hours {
+	margin-bottom: 1.25em;
+}
+.hours:before,
+.hours:after {
+	content: "";
+	display: table;
+}
+.hours:after {
+	clear: both;
+}
+.hours ol {
+	float: left;
+	width: 25%;
+}
+
+/*
+ * Main content: 1.3em font-size
+ * Sub content: 1.1em font-size
+ */
+
+#footer {
+	background: #246a33 url(../img/footer-bg.jpg) no-repeat 50% 0;
+	padding: 20px 0 140px;
+	font-size: 1.1em;
+	color: #fdfdfd;}
+
+	#footerContent {
+		position: relative;
+		margin: 0 auto;
+		width: 828px;}
+
+	#footer a:link,
+	#footer a:visited {
+		text-decoration: none;
+		color: #fdfdfd;}
+
+		#footer a:hover {
+			text-decoration: underline;}
+
+	#footer .vcard {
+		display: block;
+		margin: 10px 0 0;
+		font-style: normal;
+		color: #9efab2;}
+
+		#footer .street-address {
+			display: block;}
+
+#utilityNavigation {
+	position: absolute;
+	top: 0;
+	right: 25px;}
+
+	#utilityNavigation li {
+		float: left;
+		background: transparent url(../img/utility-navigation-pipe.png) no-repeat 0 50%;
+		margin: 0 0 0 7px;
+		padding: 0 0 0 7px;}
+
+		#utilityNavigation .first {
+			background: none;}
