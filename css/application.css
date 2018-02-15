@@ -445,6 +445,14 @@ h3 {
 	#brandLogos ul {
 		display: none;}
 
+.factory-badge {
+    background-color: #6b756d;
+    color: #fff;
+    padding: .2em .4em;
+    font-weight: normal;
+    border-radius: 5px;
+    font-size: .8em;}
+
 /* Hours */
 .hours {
 	margin-bottom: 1.25em;
