@@ -11,29 +11,7 @@
 
     <div id="container">
         <a href="{{ "/" | relative_url }}" id="logo">West Allis Vacuum</a>
-        <a href="tel:+1-414-543-9181" id="callUsToday">Call us today! 414.543.9181</a>
-        <a href="http://fb.me/WestAllisVacuum" id="facebook" target="_blank"><img alt="Facebook" src="/img/logo-facebook.png" title="Like us on Facebook"></a>
-
         {{ content }}
-
-    <ol id="mainNavigation2">
-        <li><a {% if page.section contains "faqs" %}class="active"{% endif %} href="{{ "/faqs" | relative_url }}" title="Frequently Asked Questions">FAQs</a></li>
-    </ol>
-    </div>
-
-    <div id="footer">
-        <div id="footerContent">
-            <span id="copyright">
-                &copy;
-                {{ 'now' | date: "%Y" }}
-                West Allis Vacuum
-            </span>
-
-            <ol id="utilityNavigation">
-                <li class="first"><a href="{{ "/home" | relative_url }}>">Home</a></li>
-                <li><a href="{{ "/faqs" | relative_url }}" title="Frequently Asked Questions">FAQs</a></li>
-            </ol>
-        </div>
     </div>
 
     {% if jekyll.environment == 'production' %}
