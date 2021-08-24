@@ -74,12 +74,12 @@ a {
 	position: relative;
 	margin: 42px auto 0;
 	padding-bottom: 35px;
-	width: 828px;
-	/*font-size: 80%;*/}
+	max-width: 80%;}
 
 #logo {
 	display: block;
 	background: transparent url(../img/logo-alt.png) no-repeat 0 0;
+	margin: 0 auto 15px;
 	width: 203px;
 	height: 115px;
 	position: relative;
@@ -201,7 +201,7 @@ a {
 /* Intro on homepage */
 #intro {
 	color: #444;
-	font-size: 13px;
+	font-size: 1.3em;
 	margin: 15px 30px;
 }
 
@@ -295,7 +295,7 @@ h2 {
 	/*background-image: url(../img/headers-level-two.png);
 	background-repeat: no-repeat;*/
 	font-family: 'Rokkitt', serif;
-	font-size: 22px;
+	font-size: 1.8em;
 	/*height: 20px;*/
 	margin: 0 0 10px;
 	/*text-indent: -1000em;*/}
